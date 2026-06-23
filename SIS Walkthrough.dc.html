@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <!-- 01 TITLE -->
+  <section data-label="Title" data-speaker-notes="Welcome. This is a walkthrough of the Stakeholder Intelligence System — SIS — built for Unilever Nigeria Corporate Affairs. Shown here in the Atlassian design language." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;display:flex;box-sizing:border-box">
+    <div style="width:14px;height:100%;background:#0c66e4;flex:none"></div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 130px;box-sizing:border-box">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:54px">
+        <div style="width:60px;height:60px;border-radius:13px;background:#0c66e4;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:30px">S</div>
+        <div style="font-weight:700;font-size:24px;letter-spacing:-0.3px">Stakeholder Intelligence</div>
+      </div>
+      <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">Product walkthrough</div>
+      <h1 style="font-size:92px;font-weight:800;letter-spacing:-3px;line-height:1.0;margin:20px 0 0">Stakeholder<br>Intelligence System</h1>
+      <div style="font-size:34px;color:#44546f;margin-top:26px;font-weight:500">One voice, one source of truth.</div>
+      <div style="width:120px;height:5px;background:#0c66e4;border-radius:3px;margin:46px 0 30px"></div>
+      <div style="font-size:22px;color:#626f86">Unilever Nigeria · Corporate Affairs &amp; Sustainability</div>
+    </div>
+    <div style="position:absolute;right:60px;bottom:48px;font-size:18px;color:#8590a2;font-weight:600">Atlassian design system</div>
+  </section>
+
+  <!-- 02 THE SHIFT -->
+  <section data-label="The shift" data-speaker-notes="The core problem: stakeholder relationships live in scattered spreadsheets and individual memory. When someone leaves, context is lost. SIS replaces that with a single proactive source of truth." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;padding:96px 130px;box-sizing:border-box;display:flex;flex-direction:column">
+    <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">The shift</div>
+    <h2 style="font-size:60px;font-weight:800;letter-spacing:-1.6px;line-height:1.05;margin:14px 0 0;max-width:1180px">From scattered memory to one proactive source of truth</h2>
+    <div style="display:flex;gap:34px;margin-top:64px;flex:1">
+      <div style="flex:1;background:#fafafa;border:1px solid #dfe1e6;border-radius:10px;padding:44px 46px;display:flex;flex-direction:column">
+        <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:8px;font-size:18px;font-weight:700;color:#ae2a19;background:#ffeceb;padding:7px 15px;border-radius:6px">Today · reactive</div>
+        <div style="margin-top:30px;display:flex;flex-direction:column;gap:22px">
+          <div style="font-size:27px;color:#44546f;display:flex;gap:14px"><span style="color:#ae2a19">—</span>Relationships held in spreadsheets &amp; inboxes</div>
+          <div style="font-size:27px;color:#44546f;display:flex;gap:14px"><span style="color:#ae2a19">—</span>Context lost when staff move on</div>
+          <div style="font-size:27px;color:#44546f;display:flex;gap:14px"><span style="color:#ae2a19">—</span>Risks surface only after they escalate</div>
+          <div style="font-size:27px;color:#44546f;display:flex;gap:14px"><span style="color:#ae2a19">—</span>No single view for leadership</div>
+        </div>
+      </div>
+      <div style="flex:none;align-self:center;font-size:46px;color:#8590a2">→</div>
+      <div style="flex:1;background:#e9f2fe;border:1px solid #8fb8f6;border-radius:10px;padding:44px 46px;display:flex;flex-direction:column">
+        <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:8px;font-size:18px;font-weight:700;color:#0055cc;background:#fff;padding:7px 15px;border-radius:6px">SIS · proactive</div>
+        <div style="margin-top:30px;display:flex;flex-direction:column;gap:22px">
+          <div style="font-size:27px;color:#172b4d;display:flex;gap:14px"><span style="color:#216e4e">✓</span>One master directory of every stakeholder</div>
+          <div style="font-size:27px;color:#172b4d;display:flex;gap:14px"><span style="color:#216e4e">✓</span>Engagements logged in under 60 seconds</div>
+          <div style="font-size:27px;color:#172b4d;display:flex;gap:14px"><span style="color:#216e4e">✓</span>Risk &amp; sentiment quantified, trended, escalated</div>
+          <div style="font-size:27px;color:#172b4d;display:flex;gap:14px"><span style="color:#216e4e">✓</span>Real-time visibility for leadership</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 HOW IT WORKS -->
+  <section data-label="How it works" data-speaker-notes="Four building blocks. A clean directory, frictionless logging, leadership dashboards, and governance to keep it all clean. Everything connects." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;padding:96px 130px;box-sizing:border-box;display:flex;flex-direction:column">
+    <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">How it works</div>
+    <h2 style="font-size:60px;font-weight:800;letter-spacing:-1.6px;line-height:1.05;margin:14px 0 0">Four connected building blocks</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:60px;flex:1">
+      <div style="background:#fff;border:1px solid #dfe1e6;border-radius:10px;padding:38px 32px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="width:58px;height:58px;border-radius:12px;background:#e9f2fe;color:#0c66e4;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700">▤</div>
+        <div style="font-size:27px;font-weight:700;margin-top:26px">Directory</div>
+        <div style="font-size:21px;color:#626f86;line-height:1.5;margin-top:12px">A searchable master record of every regulator, government body, community &amp; partner — no duplicates.</div>
+      </div>
+      <div style="background:#fff;border:1px solid #dfe1e6;border-radius:10px;padding:38px 32px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="width:58px;height:58px;border-radius:12px;background:#dcfff1;color:#216e4e;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700">＋</div>
+        <div style="font-size:27px;font-weight:700;margin-top:26px">Logging</div>
+        <div style="font-size:21px;color:#626f86;line-height:1.5;margin-top:12px">Capture a meeting in under 60 seconds — notes, sentiment, risk, actions and follow-ups.</div>
+      </div>
+      <div style="background:#fff;border:1px solid #dfe1e6;border-radius:10px;padding:38px 32px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="width:58px;height:58px;border-radius:12px;background:#fff7d6;color:#974f0c;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700">◔</div>
+        <div style="font-size:27px;font-weight:700;margin-top:26px">Dashboards</div>
+        <div style="font-size:21px;color:#626f86;line-height:1.5;margin-top:12px">Leadership sees risk exposure, sentiment trends, escalations &amp; commitments in real time.</div>
+      </div>
+      <div style="background:#fff;border:1px solid #dfe1e6;border-radius:10px;padding:38px 32px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="width:58px;height:58px;border-radius:12px;background:#f3f0ff;color:#5e4db2;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700">⚙</div>
+        <div style="font-size:27px;font-weight:700;margin-top:26px">Governance</div>
+        <div style="font-size:21px;color:#626f86;line-height:1.5;margin-top:12px">Superadmins approve new entries, edit taxonomy &amp; reassign ownership to keep data clean.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 THREE ROLES -->
+  <section data-label="Three roles" data-speaker-notes="Role-Based Access Control is central. The same app shows three very different experiences. Frontline staff get a clean logging tool; leadership gets risk visibility; the MD gets governance and oversight. Your email decides which you see." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;padding:96px 130px;box-sizing:border-box;display:flex;flex-direction:column">
+    <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">Role-based access</div>
+    <h2 style="font-size:60px;font-weight:800;letter-spacing:-1.6px;line-height:1.05;margin:14px 0 0">One app, three tailored experiences</h2>
+    <div style="font-size:24px;color:#626f86;margin-top:16px;max-width:1180px">Your Unilever email is checked against the roles table — the right interface loads automatically, with no cognitive overload.</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:54px;flex:1">
+      <div style="background:#fff;border:1px solid #dfe1e6;border-top:5px solid #0c66e4;border-radius:10px;padding:36px 34px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="display:flex;align-items:center;gap:15px">
+          <div style="width:60px;height:60px;border-radius:50%;background:#e9f2fe;color:#0c66e4;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:21px">CO</div>
+          <div><div style="font-size:25px;font-weight:700">Chidi Okonkwo</div><div style="font-size:18px;color:#626f86">Area Sales Manager</div></div>
+        </div>
+        <div style="display:inline-flex;align-self:flex-start;margin-top:22px;font-size:16px;font-weight:700;color:#0055cc;background:#e9f2fe;padding:6px 13px;border-radius:6px">STANDARD USER · FIELD</div>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px">
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#0c66e4">›</span>Mobile-first quick logging</div>
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#0c66e4">›</span>"My Stakeholders" &amp; commitments</div>
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#0c66e4">›</span>Request new stakeholders</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #dfe1e6;border-top:5px solid #ae2a19;border-radius:10px;padding:36px 34px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="display:flex;align-items:center;gap:15px">
+          <div style="width:60px;height:60px;border-radius:50%;background:#ffeceb;color:#ae2a19;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:21px">ZO</div>
+          <div><div style="font-size:25px;font-weight:700">Zainab Obagun</div><div style="font-size:18px;color:#626f86">Corporate Affairs Lead</div></div>
+        </div>
+        <div style="display:inline-flex;align-self:flex-start;margin-top:22px;font-size:16px;font-weight:700;color:#ae2a19;background:#ffeceb;padding:6px 13px;border-radius:6px">LEADERSHIP</div>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px">
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#ae2a19">›</span>Risk &amp; sentiment dashboard</div>
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#ae2a19">›</span>Escalation board &amp; workflow</div>
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#ae2a19">›</span>Activity feed of Tier-1 moves</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #dfe1e6;border-top:5px solid #5e4db2;border-radius:10px;padding:36px 34px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(9,30,66,0.06)">
+        <div style="display:flex;align-items:center;gap:15px">
+          <div style="width:60px;height:60px;border-radius:50%;background:#f3f0ff;color:#5e4db2;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:21px">TA</div>
+          <div><div style="font-size:25px;font-weight:700">Tobi Adeniyi</div><div style="font-size:18px;color:#626f86">Managing Director</div></div>
+        </div>
+        <div style="display:inline-flex;align-self:flex-start;margin-top:22px;font-size:16px;font-weight:700;color:#5e4db2;background:#f3f0ff;padding:6px 13px;border-radius:6px">SUPERADMIN</div>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px">
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#5e4db2">›</span>Everything leadership sees</div>
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#5e4db2">›</span>Approve / reject / merge requests</div>
+          <div style="font-size:20px;color:#44546f;display:flex;gap:11px"><span style="color:#5e4db2">›</span>Taxonomy &amp; ownership control</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 ACCESS MATRIX -->
+  <section data-label="Access matrix" data-speaker-notes="Here is who can access what, at a glance. Field users get the logging essentials. Leadership adds the dashboards and escalation workflow. Superadmin adds governance. Access is additive and enforced by role." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;padding:96px 130px;box-sizing:border-box;display:flex;flex-direction:column">
+    <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">Who can access what</div>
+    <h2 style="font-size:60px;font-weight:800;letter-spacing:-1.6px;line-height:1.05;margin:14px 0 0">Access matrix</h2>
+    <div style="margin-top:48px;border:1px solid #dfe1e6;border-radius:10px;overflow:hidden;flex:none">
+      <div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;background:#f7f8f9;border-bottom:1px solid #dfe1e6">
+        <div style="padding:22px 30px;font-size:21px;font-weight:700;color:#44546f">Capability</div>
+        <div style="padding:22px 18px;font-size:21px;font-weight:700;color:#0c66e4;text-align:center">Field</div>
+        <div style="padding:22px 18px;font-size:21px;font-weight:700;color:#ae2a19;text-align:center">Leadership</div>
+        <div style="padding:22px 18px;font-size:21px;font-weight:700;color:#5e4db2;text-align:center">Superadmin</div>
+      </div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid #ebecf0"><div style="padding:19px 30px;font-size:22px;color:#172b4d">Directory &amp; 360° profiles</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div></div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid #ebecf0;background:#fafbfc"><div style="padding:19px 30px;font-size:22px;color:#172b4d">Log engagements</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div></div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid #ebecf0"><div style="padding:19px 30px;font-size:22px;color:#172b4d">"My Stakeholders" &amp; requests</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div></div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid #ebecf0;background:#fafbfc"><div style="padding:19px 30px;font-size:22px;color:#172b4d">Risk dashboard &amp; trends</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div></div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid #ebecf0"><div style="padding:19px 30px;font-size:22px;color:#172b4d">Escalation board &amp; workflow</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div></div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid #ebecf0;background:#fafbfc"><div style="padding:19px 30px;font-size:22px;color:#172b4d">Activity / "what's new" feed</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div></div>
+      <div data-row style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr"><div style="padding:19px 30px;font-size:22px;color:#172b4d">Governance · approve, taxonomy, ownership</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div><div style="padding:19px;text-align:center;font-size:22px;color:#8590a2">—</div><div style="padding:19px;text-align:center;font-size:22px;color:#216e4e">●</div></div>
+    </div>
+    <div style="margin-top:26px;font-size:19px;color:#626f86"><span style="color:#216e4e;font-weight:700">●</span> Full access &nbsp;&nbsp; <span style="color:#8590a2;font-weight:700">—</span> Hidden for this role</div>
+  </section>
+
+  <!-- 06 LOGIN -->
+  <section data-label="Sign-in" data-speaker-notes="Sign-in uses Unilever SSO — no new passwords. The email is checked against the roles table and the correct interface loads. Here we show three demo roles you can step into." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;display:flex;align-items:center;gap:70px;padding:80px 110px;box-sizing:border-box">
+    <div style="width:580px;flex:none">
+      <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">Sign-in &amp; routing</div>
+      <h2 style="font-size:54px;font-weight:800;letter-spacing:-1.4px;line-height:1.06;margin:14px 0 0">Secure sign-in,<br>automatic role routing</h2>
+      <div style="margin-top:34px;display:flex;flex-direction:column;gap:20px">
+        <div style="font-size:24px;color:#44546f;display:flex;gap:13px"><span style="color:#0c66e4;font-weight:700">1</span>Sign in with your Unilever email via SSO — no new password.</div>
+        <div style="font-size:24px;color:#44546f;display:flex;gap:13px"><span style="color:#0c66e4;font-weight:700">2</span>The system checks your email against the User Roles table.</div>
+        <div style="font-size:24px;color:#44546f;display:flex;gap:13px"><span style="color:#0c66e4;font-weight:700">3</span>The right experience loads — standard UI or hidden admin UI.</div>
+      </div>
+    </div>
+    <div style="flex:1;border-radius:9px;overflow:hidden;border:1px solid #dfe1e6;box-shadow:0 18px 44px -18px rgba(9,30,66,0.3)">
+      <div style="height:36px;background:#f7f8f9;border-bottom:1px solid #dfe1e6;display:flex;align-items:center;gap:8px;padding:0 16px"><span style="width:11px;height:11px;border-radius:50%;background:#ff5f57"></span><span style="width:11px;height:11px;border-radius:50%;background:#febc2e"></span><span style="width:11px;height:11px;border-radius:50%;background:#28c840"></span></div>
+      <img src="deck-assets/atl/login.png" style="display:block;width:100%"/>
+    </div>
+  </section>
+
+  <!-- 07 FIELD -->
+  <section data-label="Field user" data-speaker-notes="The daily journey for frontline staff. A field user opens the app on their phone, taps Log Engagement, and records a meeting in under 60 seconds — stakeholder, notes, sentiment, risk, actions and a follow-up date. They also see their own stakeholders and open commitments." style="position:relative;width:100%;height:100%;background:#f7f8f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;display:flex;align-items:center;gap:60px;padding:80px 110px;box-sizing:border-box">
+    <div style="width:560px;flex:none">
+      <div style="display:inline-flex;align-items:center;font-size:16px;font-weight:700;color:#0055cc;background:#e9f2fe;padding:6px 13px;border-radius:6px">STANDARD USER · FIELD</div>
+      <h2 style="font-size:54px;font-weight:800;letter-spacing:-1.4px;line-height:1.06;margin:18px 0 0">Log a meeting in<br>under 60 seconds</h2>
+      <div style="margin-top:30px;display:flex;flex-direction:column;gap:18px">
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#216e4e">✓</span>One prominent <b style="color:#172b4d">Log engagement</b> button</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#216e4e">✓</span>Quick-tap sentiment &amp; risk — no typing</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#216e4e">✓</span>Agreed actions &amp; next-engagement date</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#216e4e">✓</span>"My Stakeholders" &amp; open commitments at a glance</div>
+      </div>
+    </div>
+    <div style="flex:1;display:flex;gap:40px;justify-content:center;align-items:center">
+      <div style="flex:none">
+        <div style="width:340px;height:600px;background:#091e42;border-radius:38px;padding:11px;box-shadow:0 22px 50px -20px rgba(9,30,66,0.45)">
+          <div style="width:100%;height:100%;border-radius:28px;background-image:url('deck-assets/atl/field-home.png');background-size:cover;background-position:center top;background-repeat:no-repeat"></div>
+        </div>
+        <div style="text-align:center;font-size:18px;font-weight:600;color:#626f86;margin-top:16px">Field home</div>
+      </div>
+      <div style="flex:none">
+        <div style="width:340px;height:600px;background:#091e42;border-radius:38px;padding:11px;box-shadow:0 22px 50px -20px rgba(9,30,66,0.45)">
+          <div style="width:100%;height:100%;border-radius:28px;background-image:url('deck-assets/atl/log-modal.png');background-size:cover;background-position:center top;background-repeat:no-repeat"></div>
+        </div>
+        <div style="text-align:center;font-size:18px;font-weight:600;color:#626f86;margin-top:16px">Quick log</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 DIRECTORY -->
+  <section data-label="Directory" data-speaker-notes="The shared directory. Anyone can search across names, notes, owners and engagements, then filter by category and priority tier and sort by risk, last contact or owner. Flagged and high-risk stakeholders surface first." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;display:flex;align-items:center;gap:70px;padding:80px 110px;box-sizing:border-box">
+    <div style="width:560px;flex:none">
+      <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">Master directory</div>
+      <h2 style="font-size:54px;font-weight:800;letter-spacing:-1.4px;line-height:1.06;margin:14px 0 0">Find any stakeholder in seconds</h2>
+      <div style="margin-top:30px;display:flex;flex-direction:column;gap:18px">
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Search across names, notes, owners &amp; engagements</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Filter by category <span style="color:#8590a2">and</span> priority tier</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Sort by risk, last contact or owner</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Risk &amp; sentiment shown inline on every row</div>
+      </div>
+    </div>
+    <div style="flex:1;border-radius:9px;overflow:hidden;border:1px solid #dfe1e6;box-shadow:0 18px 44px -18px rgba(9,30,66,0.3)">
+      <div style="height:36px;background:#f7f8f9;border-bottom:1px solid #dfe1e6;display:flex;align-items:center;gap:8px;padding:0 16px"><span style="width:11px;height:11px;border-radius:50%;background:#ff5f57"></span><span style="width:11px;height:11px;border-radius:50%;background:#febc2e"></span><span style="width:11px;height:11px;border-radius:50%;background:#28c840"></span></div>
+      <img src="deck-assets/atl/directory.png" style="display:block;width:100%"/>
+    </div>
+  </section>
+
+  <!-- 09 PROFILE -->
+  <section data-label="360° profile" data-speaker-notes="Click any stakeholder for the full 360° view: static profile, an active-escalation banner, a relationship trajectory that trends sentiment and risk over time, and a chronological feed of every past engagement. Full context before you ever walk into the room." style="position:relative;width:100%;height:100%;background:#f7f8f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;display:flex;align-items:center;gap:70px;padding:80px 110px;box-sizing:border-box">
+    <div style="width:560px;flex:none">
+      <div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0c66e4">360° profile</div>
+      <h2 style="font-size:54px;font-weight:800;letter-spacing:-1.4px;line-height:1.06;margin:14px 0 0">Full context, one screen</h2>
+      <div style="margin-top:30px;display:flex;flex-direction:column;gap:18px">
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Owner, category, priority &amp; live status</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span><b style="color:#172b4d">Relationship trajectory</b> — sentiment &amp; risk over time</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Chronological feed of every engagement</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#0c66e4">›</span>Active-escalation banner when one is open</div>
+      </div>
+    </div>
+    <div style="flex:1;border-radius:9px;overflow:hidden;border:1px solid #dfe1e6;box-shadow:0 18px 44px -18px rgba(9,30,66,0.3)">
+      <div style="height:36px;background:#f7f8f9;border-bottom:1px solid #dfe1e6;display:flex;align-items:center;gap:8px;padding:0 16px"><span style="width:11px;height:11px;border-radius:50%;background:#ff5f57"></span><span style="width:11px;height:11px;border-radius:50%;background:#febc2e"></span><span style="width:11px;height:11px;border-radius:50%;background:#28c840"></span></div>
+      <img src="deck-assets/atl/profile.png" style="display:block;width:100%"/>
+    </div>
+  </section>
+
+  <!-- 10 DASHBOARD -->
+  <section data-label="Leadership dashboard" data-speaker-notes="What leadership sees on login. KPIs for high risk, open escalations and commitments due this week, plus a portfolio sentiment trend that shows whether relationship health is improving or declining over time." style="position:relative;width:100%;height:100%;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#172b4d;display:flex;align-items:center;gap:70px;padding:80px 110px;box-sizing:border-box">
+    <div style="width:560px;flex:none">
+      <div style="display:inline-flex;align-items:center;font-size:16px;font-weight:700;color:#ae2a19;background:#ffeceb;padding:6px 13px;border-radius:6px">LEADERSHIP</div>
+      <h2 style="font-size:54px;font-weight:800;letter-spacing:-1.4px;line-height:1.06;margin:18px 0 0">Risk exposure at a glance</h2>
+      <div style="margin-top:30px;display:flex;flex-direction:column;gap:18px">
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#ae2a19">›</span>KPIs — high risk, open escalations, due this week</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#ae2a19">›</span><b style="color:#172b4d">Portfolio sentiment trend</b> — improving or declining</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#ae2a19">›</span>Current Supportive / Neutral / Resistant mix</div>
+        <div style="font-size:23px;color:#44546f;display:flex;gap:12px"><span style="color:#ae2a19">›</span>Upcoming commitments &amp; recent Tier-1 activity</div>
+      </div>
+    </div>
+    <div style="flex:1;border-radius:9px;overflow:hidden;border:1px solid #dfe1e6;box-shadow:0 18px 44px -18px rgba(9,30,66,0.3)">
+      <div style="height:36px;background:#f7f8f9;border-bottom:1px solid #dfe1e6;display:flex;align-items:center;gap:8px;padding:0 16px"><span style="width:11px;height:11px;border-radius:50%;background:#ff5f57"></span><span style="width:11px;height:11px;border-radius:50%;background:#febc2e"></span><span style="width:11px;height:11px;border-radius:50%;background:#28c840"></span></div>
+      <img src="deck-assets/atl/dashboard.png" style="display:block;width:100%"/>
+    </div>
+  </section>
+
+</x-import>
+</x-dc>
+</body>
+</html>

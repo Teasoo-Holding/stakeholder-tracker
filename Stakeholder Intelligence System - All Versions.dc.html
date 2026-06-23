@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="position:fixed;inset:0;background:#0b0d12;overflow:hidden">
+
+  <iframe title="Warm" src="Stakeholder%20Intelligence%20System.dc.html" style="{{ warmFrame }}"></iframe>
+  <iframe title="Atlassian" src="Stakeholder%20Intelligence%20System%20-%20Atlassian.dc.html" style="{{ atlFrame }}"></iframe>
+  <iframe title="Fluent 2" src="Stakeholder%20Intelligence%20System%20-%20Fluent%202.dc.html" style="{{ flFrame }}"></iframe>
+
+  <div style="position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:99999;display:flex;align-items:center;gap:4px;background:rgba(20,24,33,0.92);backdrop-filter:blur(10px);border-radius:12px;padding:5px;box-shadow:0 12px 34px -10px rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.08)">
+    <span style="font-size:10px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;color:#868f9f;padding:0 6px 0 9px">Design system</span>
+    <button onClick="{{ goWarm }}" style="{{ warmBtn }}">Warm</button>
+    <button onClick="{{ goAtlassian }}" style="{{ atlBtn }}">Atlassian</button>
+    <button onClick="{{ goFluent }}" style="{{ flBtn }}">Fluent 2</button>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { active: 'warm' };
+  renderVals(){
+    const a = this.state.active;
+    const frame = (on) => 'position:absolute;inset:0;width:100%;height:100%;border:0;display:'+(on?'block':'none');
+    const pill = (on) => 'border:none;border-radius:8px;padding:7px 14px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:system-ui,-apple-system,sans-serif;transition:all .12s;background:'+(on?'#ffffff':'transparent')+';color:'+(on?'#14181f':'#c2c8d2');
+    return {
+      warmFrame: frame(a==='warm'),
+      atlFrame: frame(a==='atlassian'),
+      flFrame: frame(a==='fluent'),
+      goWarm: () => this.setState({active:'warm'}),
+      goAtlassian: () => this.setState({active:'atlassian'}),
+      goFluent: () => this.setState({active:'fluent'}),
+      warmBtn: pill(a==='warm'),
+      atlBtn: pill(a==='atlassian'),
+      flBtn: pill(a==='fluent'),
+    };
+  }
+}
+</script>
+</body>
+</html>
